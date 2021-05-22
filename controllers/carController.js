@@ -45,7 +45,7 @@ createCar = async(req, res) => {
   const checkVINQuery = `PREFIX : <http://geza.com/>
     ASK { ?carId :vin "${vin}"}`;
 
-    const checkHasVehicleVINQuery = `PREFIX : <http://geza.com/>
+  const checkHasVehicleVINQuery = `PREFIX : <http://geza.com/>
     ASK { ?subscriptionId :hasVehicle :${vin}}`;
 
   try {
