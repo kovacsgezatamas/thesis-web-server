@@ -1,0 +1,117 @@
+@prefix : <http://geza.com/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+:1890626123456
+  a :Subscription;
+  :hasName "Kovacs Geza Tamas";
+  :isPerson "true"^^xsd:boolean;
+  :birthInfo
+    [:birthDate "1989-06-26"^^xsd:date; :birthPlace :Romania];
+  :hasVehicle
+    [
+      :make :Toyota;
+      :model :Carmy;
+      :licensePlate "CJ07LJK";
+      :productionDate "1989-10-11"^^xsd:date;
+      :vin "A1234";
+      :withEngine :Electric;
+      :isSuspended false;
+      :image <http://localhost:3000/car.jpg>
+    ],
+    [
+      :make :VW;
+      :model :Polo;
+      :licensePlate "CJ01PLO";
+      :productionDate "2013-12-10"^^xsd:date;
+      :vin "B1234";
+      :withEngine :Diesel;
+      :isSuspended false;
+      :image <http://localhost:3000/car.jpg>
+    ].
+
+:Toyota :hasName "Toyota".
+:Carmy :hasName "Carmy".
+:VW :hasName "Volkswagen".
+:Polo :hasName "Polo".
+
+:J123405LDT a :Subscription; :hasName "Best Software Company"; :isPerson false.
+
+:C1234
+  :make :Dacia;
+  :model :Duster;
+  :licensePlate "CJ01DUS";
+  :productionDate "2019-01-17"^^xsd:date;
+  :withEngine :Petrol;
+  :vin "C1234";
+  :image <http://localhost:3000/car.jpg>.
+
+:D1234
+  :make :Dacia;
+  :model :Duster;
+  :licensePlate "CJ02DUS";
+  :productionDate "2019-01-17"^^xsd:date;
+  :vin "D1234";
+  :image <http://localhost:3000/car.jpg>.
+
+:E1234
+  :make :Dacia;
+  :model :Duster;
+  :licensePlate "CJ03DUS";
+  :productionDate "2019-01-17"^^xsd:date;
+  :vin "E1234".
+
+:F1234
+  :make :Dacia;
+  :model :Duster;
+  :licensePlate "CJ04DUS";
+  :productionDate "2019-01-17"^^xsd:date;
+  :vin "F1234";
+  :withEngine :Petrol;
+  :isSuspended true;
+  :image <http://localhost:3000/car.jpg>.
+
+:G1234
+  :make :Dacia;
+  :model :Duster;
+  :licensePlate "CJ05DUS";
+  :productionDate "2019-01-17"^^xsd:date;
+  :vin "G1234";
+  :withEngine :Petrol.
+
+:H1234
+  :make :Dacia;
+  :model :Duster;
+  :licensePlate "CJ06DUS";
+  :productionDate "2019-01-17"^^xsd:date;
+  :withEngine :Petrol;
+  :vin "H1234";
+  :image <http://localhost:3000/car.jpg>.
+
+:I1234
+  :make :Dacia;
+  :model :Duster;
+  :licensePlate "CJ07DUS";
+  :productionDate "2019-01-17"^^xsd:date;
+  :withEngine :Petrol;
+  :vin "I1234".
+
+:J1234
+  :make :Dacia;
+  :model :Duster;
+  :licensePlate "CJ08DUS";
+  :productionDate "2019-01-17"^^xsd:date;
+  :vin "J1234";
+  :image <http://localhost:3000/car.jpg>.
+
+:Dacia :hasName "Dacia".
+:Duster :hasName "Duster".
+
+:J123405LDT :hasVehicle :C1234, :D1234, :E1234, :F1234, :G1234, :H1234, :I1234, :J1234.
+
+:J98Y2848GU a :Subscription; :hasName "UBB"; :isPerson false.
+:JIEWRHC9NR a :Subscription; :hasName "Asociatia de Proprietari Garbau"; :isPerson false.
+:J897238883 a :Subscription; :hasName "Consiliul local Aiton"; :isPerson false.
+:2900710987654 a :Subscription; :hasName "Biro Reka"; :isPerson true.
+:1123456789123 a :Subscription; :hasName "Raed Arafat"; :isPerson true.
+:1988492332942 a :Subscription; :hasName "Petofi Sandor"; :isPerson true.
+:2987654345666 a :Subscription; :hasName "Arany Janos"; :isPerson true.

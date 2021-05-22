@@ -1,0 +1,19 @@
+{
+  "name": "thesis-web-server",
+  "version": "1.0.0",
+  "description": "Thesis Web Server",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "start": "nodemon index.js"
+  },
+  "author": "Kovacs Geza-Tamas",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.7",
+    "axios": "0.21.1"
+  }
+}
